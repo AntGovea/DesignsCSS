@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    height: 400px;
+    margin: 30px auto;
+    background: steelblue;
+    background-image:
+     linear-gradient( crimson 30%,steelblue 80%);
+}
+.header{
+    padding: 0.1px;
+    height: 600px;
+    /* width: 600px; */
+    background-image:linear-gradient(rgba(0, 0, 139, 0.368),steelblue),url('img/woman\ working.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title{
+    color: #ffffff;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 270px;
+    font-family: 'Arial'
+}
