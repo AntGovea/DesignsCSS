@@ -1,0 +1,128 @@
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      /* background: #9ab1f6; */
+      /* font-family: Arial, Helvetica, sans-serif; */
+      font-family: 'Raleway', sans-serif;
+  }
+
+  .card {
+    background-image: linear-gradient(#2a265fdb,#2a265fa9 ) ,url('./images/cascada.jpg');
+    background-size: cover;
+    background-position: center;
+      /* background-color: #2a265f; */
+      width: 400px;
+      color: #fff;
+      margin: 40px auto;
+      padding: 20px;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, .5);
+  }
+
+  .title {
+      font-size: 30px;
+      border-bottom: 3px solid #ffffff;
+      padding: 7px;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+  }
+
+  .text {
+      font-weight: 300;
+      margin-bottom: 15px;
+      line-height: 2;
+
+  }
+
+.bold{
+    font-weight: bold;
+}
+
+.cta{
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border:1px solid white;
+    padding: 15px 25px;
+    border-radius: 3px;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .container {
+      background: #fff;
+      width: 90%;
+      margin: 30px auto;
+      padding: 20px;
+      box-shadow: 3px 3px 10px rgb(0, 0, .2);
+      text-align: center;
+      height: auto;
+  }
+
+  .h1 {
+      text-align: inherit;
+      font-weight: 300;
+      font-style: italic;
+  }
+
+  /* .bold {
+      color: crimson;
+      font-weight: 400;
+  } */
+
+  /* .copy {
+      padding: 10px 0;
+      font-weight: 300; */
+      /* letter-spacing: -4px ; */
+      /* text-shadow:  3px 3px 6px rgb(0, 0, 0.5); */
+      /* text-transform: uppercase; */
+      /* text-transform: lowercase; */
+      /* text-transform: capitalize; */
+      /* line-height: 30px; */
+
+  /* } */
+
+  p {
+      /* text-align: justify; */
+  }
+
+  .enlace {
+      display: inline-block;
+      text-decoration-line: none;
+      color: crimson;
+      /* text-decoration-line: underline;
+    text-decoration-style:dashed; 
+    text-decoration-style:dotted; 
+    text-decoration-style:double; 
+    text-decoration-style:wavy;  */
+      border: 1px solid currentColor;
+      padding: 10px 25px;
+  }
