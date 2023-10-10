@@ -1,0 +1,106 @@
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+  :root {
+      --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient1: linear-gradient(135deg, #667eea80 0%, #764ba28c 100%);
+      --url-img: url("images/bg.jpg") --box-shadow:6px 6px 10px rgba(0, 0, 0, .6) --width:100% --border-radius:8px;
+      --background-white: #fff;
+      --radius: 8px;
+      --width: 100%;
+      --shadow: box-shadow(6px 6px 10px rgba(0, 0, 0, .6); )
+  }
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Raleway', sans-serif;
+      background-image: var(--gradient1), url("images/bg.jpg");
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .form {
+      width: 400px;
+      margin: 70px auto;
+      background: var(--background-white);
+      padding: 70px auto;
+      text-align: center;
+      padding: 30px 20px 40px 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+  }
+
+  .input {
+      width: var(--width);
+      padding: 20px 5px;
+      display: block;
+      margin-bottom: 20px;
+      border: 1px solid #b39b9b;
+      outline: none;
+
+  }
+
+  .input,
+  .formsubmit {
+      font-family: inherit;
+  }
+
+  .form_title {
+      margin-bottom: 40px;
+      font-size: 2rem;
+  }
+
+  .form_message {
+      max-width: var(--width);
+      min-width: var(--width);
+      max-height: 150px;
+      min-height: 150px;
+  }
+
+  .form_submit {
+      font-size: 19px;
+      font-weight: bold;
+      color: var(--background-white);
+      padding: 20px 30px;
+      display: block;
+      background: var(--gradient);
+      outline: none;
+      border: none;
+      box-shadow: var(--shadow);
+      width: var(--width);
+      cursor: pointer;
+  }
+
+  .form_submit:hover {
+      background-image: var(--gradient1);
+      transition: background-image .3s;
+  }
+
+  @media screen and(max-width:768px) {
+      body {
+          /* background-repeat: no-repeat; */
+          padding: 40px 0px;
+      }
+
+      .form {
+          margin: 0 auto;
+      }
+  }
+
+  @media screen and (max-width:425px) {
+      .form {
+          width: 90%;
+      }
+      .form_title{
+        font-size: 1.5rem;
+      }
+      .form_submit{
+        font-size: 16px;
+      }
+  }
