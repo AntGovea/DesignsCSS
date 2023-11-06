@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    outline: 2px solid #000;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    /* por defecto estan  en align-items:strech y ocupan el minimo de su contenido
+   si es que no tienen width o height definido */
+    /* align-items: flex-start; */
+    /* flex-wrap: hace que los item tomen un salto de linea si ya 
+    no hay espacio en e contenedor  por defecto es nowrap */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: column wrap-reverse;
+}
+
+.item{
+    
+    width: 190px;
+    --height: 90px;
+    height: var(--height);
+    background:tomato ;
+    line-height: var(--height);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+
+
+
+}
+
+.item1{
+}
+
+.item2{
+    background: darkslateblue;
+}
+
+.item3{
+    background: crimson;
+}
+
+.item4{
+    background: steelblue;
+}
+
+
+/* @media screen and (min-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    .item4{
+        order: -1;
+    }
+} */
