@@ -11,20 +11,43 @@
     outline: 2px solid #000;
     margin: 30px auto;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* por defecto estan  en align-items:strech y ocupan el minimo de su contenido
    si es que no tienen width o height definido */
     /* align-items: flex-start; */
     /* flex-wrap: hace que los item tomen un salto de linea si ya 
     no hay espacio en e contenedor  por defecto es nowrap */
-    /* flex-wrap: wrap-reverse; */
-    flex-flow: column wrap-reverse;
+    /** flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap; */
+    /** justify-content: space-between; */
+    /* 1er y2do elemento se pegan al contenedor 
+    y los demas se ajustan con espacios equitativos */
+    /** justify-content: space-around; */
+    /* lo anterior pero con espacio iguales enm cada lado
+    si pegar al inicio los contenedores */
+    /** justify-content: space-evenly; */
+    /*separacion de espacios equitativos */
+    /**align-items: stretch;  por defecto*/
+    /* alinear el espacio en el main axis siempre que haya espacio */
+    /* align-items: flex-end; */
+    /* justify-content: acomodar items dentro del padre */
+    /* align-items:alinear en direccion al cross axis */
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* align-content: no tiene valor por defaul y solo */
+    /* funciona cuando se desbordan los elementos  */
+    /* de flexbox */
+    /* + */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+align-items: center;
 }
 
 .item{
     
-    width: 190px;
-    --height: 90px;
+    width: 80px;
+    --height: 80px;
     height: var(--height);
     background:tomato ;
     line-height: var(--height);
@@ -33,13 +56,17 @@
     font-weight: bold;
     font-size: 1.5rem;
     font-family: sans-serif;
-
-
-
+    /* flex-basis: 0 ; */
+    /* flex-grow: 1; */
+    /* flex: grow shrink basis; */
+    /* flex: 1 1 0; */
+    /* justify-content: center; */
 
 }
 
 .item1{
+    /* Align-self:permite alinear elementos individualmente con base en el cross-axis */
+align-self: flex-start;
 }
 
 .item2{
